@@ -33,6 +33,7 @@ body {
 .nav .nav-title {
     font-size: 48px;
     font-weight: 900;
+    text-transform: lowercase;
 }
 
 .nav .nav-link {
@@ -78,15 +79,41 @@ body {
 
 .intro {
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
     height: 60vh;
+    gap: -5vw;
+
+    margin: 50px;
 }
 
-/* .hero {
-} */
+.hero {
+    max-width: 30em;
+}
+
+.hero > p {
+    word-wrap: break-word;
+}
+
+.hero-img {
+    max-width: 35vw;
+    min-width: 500px;
+}
 
 .info, .quote {
+    display: flex;
     height: 40vh;
+}
+
+.info { 
+    justify-content: center;
+}
+
+.info-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--dark-primary);
 }
 
 .sign-up {
