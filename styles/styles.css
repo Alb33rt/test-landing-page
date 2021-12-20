@@ -6,7 +6,7 @@
     --dark-primary: #1d3557;
 }
 
-/* body {
+body {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -20,4 +20,4 @@ footer {
     align-items: center;
 
     height: 5em;
-} */
+}
