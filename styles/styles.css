@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+
 :root {
     --primary: #e63946;
     --secondary: #457b9d;
@@ -6,18 +8,80 @@
     --dark-primary: #1d3557;
 }
 
+* { 
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
+    height: 100vh;
 }
 
-footer {
+.header {
+    display: flex;
+}
+
+.header, .footer {
+    flex-wrap: wrap;
+}
+
+/* NAVBAR */
+
+.nav {
+    justify-content: space-between;
+}
+
+.nav .nav-title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.nav .nav-link {
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+
+    font-weight: 500;
+}
+
+.nav-link-item {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-link-item a {
+    color: var(--dark-primary);
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+.footer {
     display: flex;
     flex-grow: 0;
     flex-basis: auto;
     justify-content: center;
     align-items: center;
-
     height: 5em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.hero {
+    height: 70vh;
+}
+
+.info, .quote {
+    height: 40vh;
+}
+
+.sign-up {
+    padding: 3vh;
 }
