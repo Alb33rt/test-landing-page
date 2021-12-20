@@ -1,0 +1,23 @@
+:root {
+    --primary: #e63946;
+    --secondary: #457b9d;
+    --aqua: #a8dadc;
+    --white: #f1faee;
+    --dark-primary: #1d3557;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+footer {
+    display: flex;
+    flex-grow: 0;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+
+    height: 5em;
+} */
