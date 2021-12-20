@@ -16,11 +16,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    height: 100vh;
-}
-
-.header {
-    display: flex;
 }
 
 .header, .footer {
@@ -30,7 +25,9 @@ body {
 /* NAVBAR */
 
 .nav {
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav .nav-title {
@@ -42,13 +39,16 @@ body {
     display: flex;
     list-style-type: none;
     gap: 2em;
+    flex: 0 0 400px;
+
+    justify-content: center;
+    align-items: center;
 
     font-weight: 500;
-}
+    font-size: 18px;
 
-.nav-link-item {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-link-item a {
@@ -67,6 +67,8 @@ body {
     height: 5em;
 }
 
+/* MAIN CONTENT */
+
 .content {
     display: flex;
     flex-direction: column;
@@ -74,9 +76,14 @@ body {
     flex-grow: 1;
 }
 
-.hero {
-    height: 70vh;
+.intro {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
 }
+
+/* .hero {
+} */
 
 .info, .quote {
     height: 40vh;
