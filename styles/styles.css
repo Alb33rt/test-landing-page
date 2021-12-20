@@ -31,6 +31,7 @@ body {
 }
 
 .nav .nav-title {
+    color: var(--primary);
     font-size: 48px;
     font-weight: 900;
     text-transform: lowercase;
